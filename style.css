@@ -1,0 +1,140 @@
+/* Resetting margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container setup */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fafafa;
+    flex-wrap: wrap;
+}
+
+/* Phone preview section */
+.phone-preview img {
+    max-width: 400px;
+    height: auto;
+    display: none; /* Hidden on mobile */
+}
+
+@media(min-width: 768px) {
+    .phone-preview img {
+        display: block;
+    }
+}
+
+/* Login section */
+.login-section {
+    max-width: 350px;
+    width: 100%;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Login box styles */
+.login-box {
+    background-color: #fff;
+    padding: 40px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.logo {
+    width: 175px;
+    margin: 0 auto 30px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0095f6;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #007ab8;
+}
+
+/* Divider between login and other options */
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.divider .line {
+    flex: 1;
+    height: 1px;
+    background-color: #dbdbdb;
+}
+
+.divider p {
+    margin: 0 10px;
+    font-size: 14px;
+    color: #8e8e8e;
+}
+
+/* Facebook login and forgot password */
+.fb-login {
+    color: #385185;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.forgot-password {
+    color: #00376b;
+    text-decoration: none;
+    font-size: 12px;
+    margin-top: 20px;
+    display: block;
+}
+
+/* Signup box */
+.signup-box {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+}
+
+.signup-box a {
+    color: #0095f6;
+    text-decoration: none;
+}
+
+/* App download links */
+.app-links {
+    margin-top: 20px;
+}
+
+.app-links p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.app-links img {
+    width: 135px;
+    margin: 5px;
+}
